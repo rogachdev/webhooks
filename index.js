@@ -14,6 +14,10 @@ app.get('/', (req, res) => {
     res.status(200).json({ result: 'webook funcionando' })
 });
 
+app.get('/exemplo', (req, res) => {
+    res.status(200).json({ explo: 'teste' })
+})
+
 app.listen('3000', () => {
     console.log('webhook started on listen port 3000');
 });
